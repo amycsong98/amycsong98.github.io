@@ -1,0 +1,281 @@
+
+/* general */
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'SofiaProBold', Arial, sans-serif;
+	color: #000;
+}
+footer {
+	clear:both;
+	padding:100px;
+	bottom:0px;
+	color:#396362;
+	text-align: center;
+}
+
+/* ---- index.html ----*/
+/* navigation bar */
+#navBar ul {
+	list-style: none;
+}
+#navBar ul li {
+	margin-top: 13px;
+	font-size: 14px;
+	border-radius: 5px;
+	text-align: center;
+}
+#navBar a {
+	text-decoration: none;
+	border-radius: 15px;
+	border: 2px transparent;
+	margin: 3px;
+	padding: 10px;
+	color: #000000;
+}
+#navBar a:hover:not(.active) {
+	color: #396362;
+}
+#navBar .active {
+	color: #4b8e8d
+}
+
+/* header pic */
+.headerPic {
+	width: 100%;
+}
+
+/* quad */
+.quad {
+	opacity: 1;
+	width: 42.5%;
+	margin: 5%;
+	float: left;
+	border-radius: 25px;
+}
+.quadRight {
+	margin-left: 0%;
+}
+.imageContainer {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.quadDiv:hover .quad {
+  opacity: 0.3;
+}
+.quadDiv:hover .imageContainer {
+  opacity: 1;
+}
+
+/*--- about.html ---*/
+.about-container {
+	margin: 5%;	
+	margin-bottom: 10px;
+}
+#about-description {
+	position: relative;
+	float: right;
+	width: 55%;
+}
+#hello-world {
+	text-align: center;
+	font-size: 65px;
+	color: #396362;
+	letter-spacing: 10px;
+}
+.me {
+	float: left;
+	width: 100%;
+}
+#amy-images {
+	position: relative;
+	width: 35%;
+	margin-left: 0px;
+	padding-right: 10px;
+	z-index: -99;
+}
+#about-description p {
+	font-size: 16px;
+	letter-spacing: 4px;
+	padding-bottom: 20px;
+}
+#about-description p a {
+	font-weight: bold;
+	color: #396362;
+}
+#hand-wave {
+	text-align: center;
+}
+#about-description p a:hover {
+	color: #000;
+}
+
+
+/*--- experiences.html ---*/
+.exp-container {
+	margin-bottom: 5%;
+	float: left;
+}
+.exp-container h1 {
+	padding-top: 30px;
+	font-size: 30px;
+	color: #396362;
+	letter-spacing: 10px;
+}
+#exp {
+	padding-left: 10%;
+}
+#skills {
+	float: right;
+	padding-right: 10%;
+}
+#exp h2 {
+	padding-top: 10px;
+	font-size: 20px;
+	color: #000;
+}
+#skills h3 {
+	padding-top: 14px;
+	font-size: 24px;
+	color: #4b8e8d;
+}
+#skills p {
+	padding-top: 10px;
+	font-size: 18px;
+	color: #000;
+}
+#resume-link {
+	padding-top: 10px;
+	font-size: 30px;
+	color: #4b8e8d;
+	letter-spacing: 10px;
+}
+
+
+/*--- resume.html ---*/
+.full-page {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding-top: 5px;
+	padding-bottom: 100px;
+}
+#pdf_holder {
+	padding-bottom: 100%;
+}
+#btndiv {
+	padding-top: 25px;
+}
+#download_button {
+	background-color: #ffe7d1;
+	color: #000;
+	width: auto;
+	text-align: center;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+#download_button:hover {
+	background-color: #3F3F3F;
+	color: #FFFFFF;
+}
+
+
+/*--- contact ---*/
+#contact {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: left;
+  align: left;
+}
+#contact p {
+  font-size: 15px;
+}
+.contact-img {
+  width: 50px;
+  height: auto;
+}
+#contact-logo {
+  float: right;
+  width: 28%;
+  height: auto;
+}
+#send-msg {
+	padding: 10px;
+}
+#send-msg h4 {
+	font-size: 20px;
+	color: #396362;
+	width: 60%;
+	margin-left: 5%;
+  padding: 3px;
+}
+#contact-form {
+  float: left;
+  box-sizing: border-box;
+	width: 60%;
+	margin-left: 5%;
+  overflow: hidden;
+  text-align: right;
+}
+#contact-form input, #contact-form textarea {
+  line-height: 20px;
+  width: 100%;
+  outline: none;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+#contact-form input[type="text"], #contact-form input[type="email"] {
+	border-bottom: 2px solid #3F3F3F;
+}
+#contact-form textarea {
+  background: none;
+  outline: none;
+  height: 150px;
+  background-color: #3F3F3F;
+  color: #FFFFFF;
+  resize: none;
+}
+#contact-form input[type=submit] {
+  width: auto;
+  padding: 10px;
+	cursor: pointer;
+	background-color: #f6c89f;
+	border-radius: 5px;
+}
+#contact-form input[type=submit]:hover {
+  background-color: #3F3F3F;
+  color: #FFFFFF;
+}
+#inprocess {
+  padding: 30px;
+  background-color: #3F3F3F;
+  color: #FFFFFF;
+  height: 500px;
+}
+#social-media p {
+  display: inline-block;
+  font-size: 13px;
+}
+#social-media h4 {
+  padding: 3px;
+  color: #000;
+}
+#social-media {
+  width: 30%;
+  padding: 20px;
+  float: right;
+}
+#social-media h4 {
+	font-size: 20px;
+	color: #396362;
+}
