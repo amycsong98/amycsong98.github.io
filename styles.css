@@ -279,3 +279,22 @@ footer {
 	font-size: 20px;
 	color: #396362;
 }
+
+
+#snippet h3 {
+	padding-left: 5%	
+}
+
+#snippet a {
+	border-radius: 15px;
+	border: 2px transparent;
+	margin: 3px;
+	padding: 10px;
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+}
+
+#snippet a:hover {
+	color: #396362;
+}
