@@ -9,49 +9,61 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
+
 <body>
-    <header>
-        <picture>
-            <img src="images/name.png" class="headerPic" alt="amy  song">
-        </picture>
-    </header>
-    <!-- NAVBAR -->
-    <div class="nav-bar-at-top">
-        <nav class="navbar navbar-expand-sm bg-light static-top">
-            <div class= "container-fluid w-100 justify-content-center" id="navBar">
-            <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item"><a class="active" href="index.html">portfolio</a></li>
-                <li class="nav-item"><a href="about.html">about</a></li>
-            </ul>
-            </div>
-        </nav>
+<header>
+    <picture>
+        <img src="images/name.png" class="headerPic" alt="amy  song">
+    </picture>
+</header>
+<!-- NAVBAR -->
+<!--<div class="nav-bar-at-top"></div>-->
+<!--<nav class="navbar navbar-expand-sm bg-light static-top">-->
+<!--    <div class="container-fluid w-100 justify-content-center" id="navBar">-->
+<!--        <ul class="nav navbar-nav mr-auto">-->
+<!--            <li class="nav-item"><a href="index.html">portfolio</a></li>-->
+<!--            <li class="nav-item"><a class="active" href="about.html">about</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
+<div class="nav-bar-at-top"></div>
+<div class="about-container">
+    <h3 id="amy-carousel"></h3>
+    <div id="amy-images">
+        <div class = 'amy-image'><img class="me" src="images/amy/amy1.jpg" alt="amy 1"></div>
+        <div class = 'amy-image'><img class="me" src="images/amy/amy2.jpg" alt="amy 2"></div>
+        <div class = 'amy-image'><img class="me" src="images/amy/amy4.jpg" alt="amy 3"></div>
     </div>
-    <div class="quadDiv" id="experiences"> 
-        <a href="experiences.html">
-            <img src="images/experiences.png" class="quad" alt="experiences">
-        </a>
-        <div class='imageContainer'></div>
+</div>
+<div class="line"></div>
+<div class="about-container">
+    <div id="about-description">
+        <h1 id="hello-world">Hello, world!</h1>
+        <p id="hand-wave">:hand-wave:</p>
+        <p>I'm Amy, currently a software engineer based in New York City.</p>
+        <p>This website is currently in the works. I will be back soon. </p>
+        <p>Meanwhile you can find me on linked in @amycsong98. </p>
     </div>
-    <div class="quadDiv" id="projects"> 
-        <a href="projects.html">  
-            <img src="images/projects.png" class="quad quadRight" alt="projects">
-        </a>
-        <div class='imageContainer'></div>
-    </div>
-    <div class="quadDiv" id="contact"> 
-        <a href="contact.html">
-            <img src="images/contact.png" class="quad" alt="contact">
-        </a>
-        <div class='imageContainer'></div>
-    </div>
-    <div class="quadDiv" id="life"> 
-        <a href="life.html">
-            <img src="images/life.png" class="quad quadRight" alt="snippets of life">
-        </a>
-        <div class='imageContainer'></div>
-    </div>
-    <footer>
-        <p> amy  song &copy;</p>
-    </footer>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("amy-image");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
+    }
+
+</script>
+<footer>
+    <p> amy  song &copy;</p>
+</footer>
 </body>
 </html>
